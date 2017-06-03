@@ -1,4 +1,6 @@
 # 使用canal实现redis缓存刷新,提供web配置
+![canal1](img/canal-list.png)
+![canal2](img/canal-update.png)
 
 ## 背景
 假设现有项目P1,是直连数据库(mysql)的。为了提高性能，现在要加上缓存(redis)，但是另有项目P2，也对数据库有操作,如何保证当P1加上redis后，P2对数据库修改后，P1从redis中获取的数据是最新的。有两种方案：
